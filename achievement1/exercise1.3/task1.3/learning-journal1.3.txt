@@ -1,0 +1,40 @@
+Question 1:
+In this Exercise, you learned how to use if-elif-else statements to run different tasks based on conditions that you define. Now practice that skill by writing a script for a simple travel app using an if-elif-else statement for the following situation: 
+The script should ask the user where they want to travel. 
+The user’s input should be checked for 3 different travel destinations that you define. 
+If the user’s input is one of those 3 destinations, the following statement should be printed: “Enjoy your stay in ______!”
+If the user’s input is something other than the defined destinations, the following statement should be printed: “Oops, that destination is not currently available.”
+
+Answer 1:
+destination = input(“Where would you like to travel?”).capitalize()
+
+if destination == ‘Bali’ or destination == ‘Seattle’ or destination == ‘London’:
+    print(“Enjoy your stay in “ + destination + “!”)
+
+else:
+    print(“Oops, that destination is not currently available.”)
+
+Question 2:
+Imagine you’re at a job interview for a Python developer role. The interviewer says “Explain logical operators in Python”. Draft how you would respond.
+
+Answer 2:
+Logical operators in Python allow the developer to check for multiple conditions at once. The “and” operator returns true if all conditions are met or false if at least one of them is not met, while the “or” operator checks if at least one condition out of multiple is met, returning true if so and false if none of the conditions are met. The “not” operator is used to reverse the result of the logical operator it is placed before.
+
+Question 3:
+What are functions in Python? When and why are they useful?
+
+Answer 3:
+Functions are blocks of code responsible for performing a certain action (or actions), such as receiving user input for a recipe, manipulating it, and returning a reformatted recipe with a difficulty level applied via a simple algorithm. Structuring code in functions can make code more reusable, allowing it to be used as many times as needed with a function call, more modular, and easier to read. In addition to allowing the developer to write custom functions, Python provides many built-in functions, such as print() and capitalize().
+
+Question 4:
+In the section for Exercise 1 in this Learning Journal, you were asked in question 3 to set some goals for yourself while you complete this course.  In preparation for your next mentor call, make some notes on how you’ve progressed towards your goals so far.
+
+Answer 4:
+Goal: Enhance my knowledge of backend development
+Minor progress by gaining comfort manipulating data in Python, but I suspect I will learn much more about this as I start to build the recipe app in earnest.
+
+Goal: Feel prepared to build a simple Python project on my own
+Solid progress. These lessons have provided many of the building blocks I will need to effectively write code with Python, and I feel that my foundational knowledge of Python has grown significantly through these 3 tasks.
+
+Goal: Learn how to write scripts to automate tasks
+Some progress. The knowledge and comfort I’ve gained with functions, operators, and conditional statements will be essential to writing scripts to automate tasks later.
