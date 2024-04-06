@@ -1,0 +1,23 @@
+Question 1:
+In your own words, what is object-oriented programming? What are the benefits of OOP?
+
+Answer 1:
+Object-oriented programming is a programming approach in based on defining objects with certain data attributes and functions, and building a computer program through the interaction of these objects. It follows the principle of Don’t Repeat Yourself, and allows for properties and methods to easily be passed down from a parent class to a subclass. In addition, OOP lends itself to writing modular and reusable code, which can make a code base easier to maintain.
+
+Question 2:
+What are objects and classes in Python? Come up with a real-world example to illustrate how objects and classes work.
+
+Answer 2:
+Classes in Python are templates that define the structure of the objects derived from them and provide methods for creating, deleting, and interacting with objects, which are instances of a class with their own state and behaviors. A real-world example of this could be a class “Band” with individual bands such as “The Beatles”, “Linkin Park”, and “Metallica” representing objects derived from the “Band” class. “Band” could contain attributes such as a list to hold the members of the band, the year they were formed, and another list to hold their album titles, as well as methods to add new albums to the band objects and update the members list.
+
+Question 3:
+In your own words, write brief explanations of the following OOP concepts; 100 to 200 words per method is fine. 
+
+Method 1: Inheritance
+Inheritance is the passing of data and procedural attributes from a base class to a subclass by including the former as a parameter in the definition of the latter, saving the developer from having to define them again in the subclass. It only works in one direction; subclasses cannot pass their attributes to the base class. However, a subclass can act as a base class for another subclass, creating a hierarchical structure in an example of multilevel inheritance. Inheritance is one of the mechanisms that supports the DRY principle in OOP, enabling easy code reuse. Additionally, new attributes can be added to a subclass, and attributes can be overridden as needed.
+
+Method 2: Polymorphism
+Polymorphism is when a data or procedural attribute has the same name but different characteristics across different classes or objects, potentially making code more flexible and maintainable. This is often accomplished through method overriding, where a subclass provides a different implementation of a method than its base class. An example of this, using the “Band” class and objects from earlier, could be a method called sing(), where different lyrics would be specified from each of the bands’ biggest hits.
+Method 3: Operator Overloading
+Operator overloading allows the developer to redefine the behavior of Python’s built-in operators, giving precedence to the more locally defined attribute. Operators such as “+”, “-”, and “str” can be redefined in a class by surrounding the operator with double underscores as a method name, then writing the new method. This is necessary when creating a custom class because the built-in operators will throw a TypeError if used on a custom class. String representation is an example of operator overloading, as seen in this exercise, used to redefine the str() method to return an object instance as a custom defined string.
+
