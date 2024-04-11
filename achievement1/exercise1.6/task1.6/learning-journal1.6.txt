@@ -1,0 +1,31 @@
+Question 1:
+What are databases and what are the advantages of using them?
+
+Answer 1:
+Databases are organized collections of data with many advantages over local storage. They are scalable, meaning they can hold vast amounts of data in a standardized format, allowing for easy access from a wide variety of applications. Access can be regulated via password or other authentication measures, providing data security. In addition, they offer data integrity via data constraints such as keys and data validation rules.
+
+Question 2:
+List 3 data types that can be used in MySQL and describe them briefly:
+
+Answer 2:
+VARCHAR - Similar to a string, a maximum character count can be added by passing the cap as an argument to VARCHAR
+FLOAT - A decimal number
+DATETIME - Stores a date/time value
+
+Question 3:
+In what situations would SQLite be a better choice than MySQL?
+
+Answer 3:
+SQLite is a better option for applications with few users, minimal tolerance for configuration, or when it will primarily be accessed for READ requests. This makes it ideal for prototyping, some low-traffic websites, and temporary cache storage.
+
+Question 4:
+Think back to what you learned in the Immersion course. What do you think about the differences between JavaScript and Python as programming languages?
+
+Answer 4:
+Python seems cleaner and easier to read to me, and I like that it uses indentation rather than curly braces for code organization. I’ve found that this makes it easier to have errors identified by the IDE, and easier to spot for me. So far, Python seems to rely less on external libraries and modules, but this may be because the applications we’ve built for this course just haven’t required much outside functionality. The virtual environment Python runs in is advantageous as it can mitigate dependency issues in comparison to JavaScript.
+
+Question 5:
+Now that you’re nearly at the end of Achievement 1, consider what you know about Python so far. What would you say are the limitations of Python as a programming language?
+
+Answer 5:
+I haven’t noticed any limitations in my own (limited) experience, but quick research revealed that there are several limitations of Python. It is an interpreted language, so it is slower than compiled languages such as C++. There is relatively limited support for Python in mobile and development, so it has not been widely adopted in those areas. Lastly, it has relatively high memory consumption, which must be considered when building scalable applications. 
