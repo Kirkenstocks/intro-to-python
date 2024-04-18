@@ -86,9 +86,6 @@ def create_recipe(conn, cursor):
   print("\nRecipe added successfully!\n")
 
   conn.commit()
-
-
-  
   
 # searches for recipes by ingredient
 def search_recipe(conn, cursor):
@@ -278,3 +275,8 @@ def view_all_recipes():
   return recipes
 
 main_menu(conn, cursor)
+
+# notes for improvement from mentor:
+# add error handling for SQL queries in case they fail
+# don't re-run main_menu() fn during error handling, find other approach
+# could add more inline comments within functions and around SQL queries

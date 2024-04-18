@@ -1,0 +1,51 @@
+Question 1:
+What is an Object Relational Mapper and what are the advantages of using one?
+
+Answer 1:
+An Object Relational Mapper (ORM) is a programming technique that allows the developer to interact with a database using an object-oriented approach by translating objects in the code into database entries, and vice versa. This approach makes interacting with a database simpler because the developer doesn’t have to write queries in SQL syntax, instead they can write everythin in Pythonic style. ORMs can also support the use of multiple SQL databases without rewriting code, and provide security against SQL injection attacks via paramaterized queries, among other tools.
+
+Question 2:
+By this point, you’ve finished creating your Recipe app. How did it go? What’s something in the app that you did well with? If you were to start over, what’s something about your app that you would change or improve?
+
+Answer 2:
+I am very pleased with how my Recipe app turned out. I put significant effort into implementing error handling for each step to make using the app as seamless as possible for the user, and tested for as many edge cases as I could think of. I also used this app as a chance to practice refactoring following the DRY principle. For example, when I realized that the first several steps of the edit_recipe() and delete_recipe() functions were the same (showing a list of recipes and selecting one by ID) I made a separate function to house the repeated logic and called it where needed. 
+If I was to start over, I would consider adding more flair to the UI formatting. My focus for the UI was to keep it simple and easy to use, but there are places I could have made my app more visually distinct.
+
+Question 3:
+Imagine you’re at a job interview. You’re asked what experience you have creating an app using Python. Taking your work for this Achievement as an example, draft how you would respond to this question.
+
+Answer 3:
+One of the projects I created was a command-line app Recipe app, where users can easily enter, edit, view, and delete recipes that are stored in a MySQL database. Though the individual features of the app were fairly simple to implement, I used this project as an opportunity to improve my error-handling processes with an emphasis on how it affects the user experience, and to think through all the ways a user could “break” my app. I tested for numerous edge cases for each feature and implemented error handling for all of them. By doing so, I created a more robust app and grew as a Python developer.
+ 
+Question 4:
+You’ve finished Achievement 1! Before moving on to Achievement 2, take a moment to reflect on your learning in the course so far: 
+
+Question 4A:
+What went well during this Achievement? 
+
+Answer 4A:
+I feel like I learned a lot during this achievement, both about Python and more foundational development concepts that I can apply in JavaScript. I am also very happy with the final result of my Recipe app.
+
+Question 4B:
+What’s something you’re proud of? 
+
+Answer 4B:
+If you couldn’t tell already, I am proud of the thought and effort I put into error handling with my Recipe app. I’m also proud of how much I have learned about Python, how I have grown as a developer, and am excited to see how some of these concepts and approaches can translate to JavaScript.
+
+Question 4C:
+What was the most challenging aspect of this Achievement? 
+
+Answer 4C:
+The most challenging (but also rewarding)  aspect of this achievement was the final 2 assignments, specifically bringing together all the concepts we had learned over 5 exercises to develop the Recipe app. There were several times I got a bit lost as I was nesting conditionals within while loops and try-except blocks, but ultimately I found the solution to each problem and deepened my understanding of Python.
+
+Question 4D:
+Did this Achievement meet your expectations? Did it give you the confidence to start working with your new Python skills?
+
+Answer 4D:
+This achievement met my expectations and built my confidence in working with Python; I particularly appreciated how all the lessons built upon one another. I am excited to learn more and continue to grow.
+
+Question 4E:
+What’s something you want to keep in mind to help you do your best in Achievement 2?
+
+Answer 4E:
+I want to continue to focus on growing my understanding of the foundational concepts of Python while adding more complex skills. I should expect to struggle at first with new concepts and view these challenges as growth opportunities.
