@@ -1,0 +1,26 @@
+Question 1:
+Suppose you’re a web developer in a company and need to decide if you’ll use vanilla (plain) Python for a project, or a framework like Django instead. What are the advantages and drawbacks of each?
+
+Answer 1:
+Django makes building an application easier and faster than vanilla Python because of its range of built-in tools, saving the developer from needing to code everything from scratch. Django’s MVT architecture makes it fast and scalable as well, so it is a good choice for large projects with many users. Vanilla Python may be a better choice if full control over the application is important, as it will allow for more customization by the developer than Django. Vanilla Python is also more lightweight than Django, making it a better choice for small projects that don’t need many of the features the framework offers.
+
+Question 2:
+In your own words, what is the most significant advantage of Model View Template (MVT) architecture over Model View Controller (MVC) architecture?
+
+Answer 2:
+The most significant advantage of MVT over MVC is its flexibility of use cases based on application size. MVT architecture is better suited to small-scale projects than MVC because the Model and View are loosely coupled, allowing for easier modification.
+
+Question 3:
+Now that you’ve had an introduction to the Django framework, write down three goals you have for yourself and your learning process during this Achievement. You can reflect on the following questions if it helps:
+What do you want to learn about Django? 
+What do you want to get out of this Achievement? 
+Where or what do you see yourself working on after you complete this Achievement?
+
+Goal 1: 
+To feel confident in my ability to build a full-stack application with Django after completing this achievement.
+
+Goal 2: 
+To deepen and expand upon my knowledge of Python fundamentals learned in the previous achievement.
+
+Goal 3: 
+To have a strong understanding of Django’s strengths, limitations, and optimal use cases. A friend recently asked me to build a website for his start-up culinary business, and I want to use Django/Python if the application requirements are met by them. Additionally, I want to gain an understanding of how I would link a Django/Python backend with a frontend JavaScript framework that I learned in the Full Stack Immersion course (most likely React).
