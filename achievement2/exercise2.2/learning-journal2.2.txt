@@ -1,0 +1,19 @@
+Question 1:
+Suppose you’re in an interview. The interviewer gives you their company’s website as an example, asking you to convert the website and its different parts into Django terms. How would you proceed? For this question, you can think about your dream company and look at their website for reference. 
+(Hint: In the Exercise, you saw the example of the CareerFoundry website in the Project and Apps section.)
+
+Answer 1:
+I don’t have a dream company, so I’ll use the website of the last company I worked for, Seattle Children’s.
+In Django terms, the entire website at https://www.seattlechildrens.org/ can be regarded as a project. Under that project are a variety of apps that represent the different modules, including About Us, Conditions, Clinics, Research, Health & Safety, Giving, Press Room, Careers, and MyChart. Each of them has specific functions and information for visitors. 
+
+Question 1:
+In your own words, describe the steps you would take to deploy a basic Django application locally on your system. 
+
+Answer 2:
+Prior to deployment, make sure the project has been created. Once created, the project can be initially deployed in 2 simple steps. First, run migrations by navigating to the root directory in the terminal and entering the command <$python manage.py migrate>. This will initialize a SQLite database by default. Next, start a local server instance by using the terminal command <$python manage.py runserver>. This will start a local server, as confirmed in the terminal. Navigate to “http://127.0.0.1:8000/” (copy and paste the link provided in the terminal) in your browser, and you should see the default Django homepage.
+
+Question 3:
+Do some research about the Django admin site and write down how you’d use it during your web application development.
+
+Answer 3:
+I would use the Django admin site to manage users and content for the project I’m building. It is useful for performing CRUD operations on the attached database, thereby changing the content available for users of the application. Additionally, I can use it to add or edit users and adjust the access rights of existing users.
