@@ -1,0 +1,11 @@
+Question 1:
+Do some research on Django models. In your own words, write down how Django models work and what their benefits are.
+
+Answer 1:
+Django models are a key component of the framework’s MVT architecture. The primary purpose of models in Django is to simplify database interaction within the application, ultimately simplifying and speeding up the development process. They accomplish this via several mechanisms, including object-relational mapping, built-in data validation, and database abstraction, all of which combine to allow the developer to interact with the database by writing database-agnostic Python code. Models also contribute significantly to the overall scalability, security, and portability of a Django app through these same mechanisms.
+
+Question 2:
+In your own words, explain why it is crucial to write test cases from the beginning of a project. You can take an example project to explain your answer.
+
+Answer 2:
+Writing tests from the beginning of a project ensures a solid foundation to build upon. If bugs appear during development due to refactoring old code or adding new code the tests should catch them and they can be fixed before being pushed to production, or before further bugs are produced as a result. Ultimately, this can save a significant amount of time and frustration throughout the development process by increasing the reliability of the code, especially when working within a team.
