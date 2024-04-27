@@ -1,0 +1,23 @@
+
+Question 1:
+Do some research on Django views. In your own words, use an example to explain how Django views work.
+
+Answer 1:
+Django views house the business logic of an application, taking Http requests and returning responses. As an example, if I was working on a web app for a restaurant, one of the necessary views would be the menu. I would use a view to handle the request to see the menu (which could be triggered by the user pressing a button or link), fetch the menu items from the database, and apply these to the corresponding template to be rendered for the user.
+
+Question 2:
+Imagine you’re working on a Django web development project, and you anticipate that you’ll have to reuse lots of code in various parts of the project. In this scenario, will you use Django function-based views or class-based views, and why?
+
+Answer 2:
+In this scenario I would use class-based views. This approach will make my code more reusable and extendable so I can save myself a significant amount of time and effort in devlopment by reducing redundant code. The codebase will be “cleaner” this way as Django’s DRY principle is followed.
+
+Question 3:
+Read Django’s documentation on the Django template language and make some notes on its basics.
+
+Answer 3:
+- Designed to strike a balance between power and ease, and to feel comfortable to developers who are familiar with writing HTML
+- Templates are text files that allow for embedding variables (replaced with values once evaluated) and tags (control the template’s logic)
+- Tags can perform loops and logic, create text in the output, or load external information for later use. There are many built-in template tags, such as for and if, elif, else
+- Filters can modify variables prior to display (example: variable|lower will lowercase the variable) and can be chained
+- Template inheritance allows the developer to build a skeleton template with common elements of the site and blocks that can be overridden by child elements
+- Automatic HTML escaping will escape certain variable characters that are commonly used in cross-site scripting attacks (escaped characters include <, >, &, ‘, “)
