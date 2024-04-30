@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Book List</h1>
+  <table border="1" cellpadding="5" cellspacing="5">
+    <tr>
+      <td>Book Title</td>
+      <td>Book Image</td>
+    </tr>
+    {% for object in object_list %} 
+    <tr>
+      <td><a href="{{object.get_absolute_url}}">{{object.name}}</a></td>
+      <td><img src="{{object.pic.url}}" width="150" height="200" alt="image of the book's cover" /></td>
+    </tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
+

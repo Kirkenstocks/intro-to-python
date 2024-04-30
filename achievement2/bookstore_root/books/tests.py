@@ -21,9 +21,14 @@ class BookModelTest(TestCase):
     # compare value to expected result
     self.assertEqual(field_label, 'name')
 
-  # check if author name is under the 120 ccharacter max length
+  # check if author name is under the 120 character max length
   def test_author_name_max_length(self):
     # same process as test_book_name()
     book = Book.objects.get(id=1)
     max_length = book._meta.get_field('author_name').max_length
     self.assertEqual(max_length, 120)
+
+  # test the get_absolut_url function to ensure correct book is picked
+  def test_get_absolute_url(self):
+    book = Book.objects.get(id=1)
+    self.assertEqual(book.get_absolute_url(), '/books/list/1')
