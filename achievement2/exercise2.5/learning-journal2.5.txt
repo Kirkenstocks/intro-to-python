@@ -1,0 +1,24 @@
+Question 1:
+In your own words, explain Django static files and how Django handles them.
+
+Answer 1:
+Static files in Django, files like CSS, JavaScript, images, and fonts, are used to add styling and interactivity to a Django application. Static files are generally kept in a directory under the app they are used in, often divided into further subdirectories depending on the type of file they are. After the proper configuration in settings.py and urls.py in the base directory, static files can be loaded into templates and implemented where desired.
+
+Question 2:
+Look up the following two Django packages on Django’s official documentation and/or other trusted sources. Write a brief description of each.
+
+Answer 2a:
+ListView
+- Used to display a list of objects from a specified model in the database by passing them to a desired template
+- Passes the objects to the template with the name ‘object_list’ by default
+- Supports pagination
+Answer 2b:
+DetailView
+- Used to display the details of a single object from the database in a desired template
+- Passes the object to the template with the name ‘object’ by default
+
+Question 3:
+You’re now more than halfway through Achievement 2! Take a moment to reflect on your learning in the course so far. How is it going? What’s something you’re proud of so far? Is there something you’re struggling with? What do you need more practice with? You can use these notes to guide your next mentor call. 
+
+Answer 3:
+Overall, I feel like everything is going smoothly. I feel like I have a decent understanding of how Django works (at least in all the ways we have covered so far) and look forward to gaining a deeper understanding. I appreciate how simple building a full-stack app is with Django compared to using an entire stack as I did in the Full-Stack Immersion course with the MERN stack. It’s a small thing, but I’m proud of how I’ve found different solutions to front-end build problems that I’ve also encountered with previous projects, refining and adding skills to my repertoire. I have struggled a bit to find the answers to questions I’ve had in the Django documentation, but have found alternate information sources in those cases. I also struggled with making design decisions for the front-end, but less so than with previous projects. I’m excited to learn more about Django and continue to practice on the aspects we have covered so far in this achievement.
