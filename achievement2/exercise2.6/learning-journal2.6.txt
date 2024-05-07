@@ -1,0 +1,28 @@
+Question 1:
+In your own words, write down the importance of incorporating authentication into an application. You can take an example application to explain your answer. 
+
+Answer 1:
+Authentication and authorization are essential to creating a secure application with dynamic, user-specific content. Let’s take Twitter (not X) as an example. Without the ability for a user to create a profile and log in to that profile securely, Twitter wouldn’t be able to track who a user follows and deliver all of the tweets from the accounts they follow directly to their Following page. Twitter would also have a much harder time keeping a consistent followers list for each user because there wouldn’t be a profile for each follower to link to the account they are following. Additionally, without authentication, controlling which users have access to what views and data would be impossible, creating massive security problems.
+
+Question 2:
+In your own words, explain the steps you should take to create a login for your Django web application. 
+
+Answer 2:
+a. Create a view to handle logins. This view will use the AuthenticationForm Django module to create a login form and implement the logic for a successful login attempt as well as return an error message for an unsuccessful attempt.
+b. Create a login template. This HTML template will display the form created in the login view so the user can enter their credentials.
+c. Register the login URL. Add the login view to the urlpatterns list in the project-level urls.py file.
+d. Users can now login to the application! Next, a link to access the login page can be added within the application, logout functionality should be incorporated, and views should be protected.
+
+Question 3:
+Look up the following three Django functions on Django’s official documentation and/or other trusted sources and write a brief description of each.
+
+Answer 3:
+authenticate()
+a. Verifies a set of user credentials, username and password as default, and returns a user object if the credentials match, or returns ‘None’ if they do not.
+
+redirect()
+b. Deals with many kinds of redirect requests and can create dynamic redirect URLs. It can redirect users to URLs or models, and can pass key values if needed.
+
+include()
+c. If a URL has a beginning that matches the first argument passed to the path() function that the include() function is within, the rest of the URL will be “chopped” off and passed to the urls.py file that was provided as an argument to the include() function. Essentially, it passes the responsibility for routing from one urls.py file to the urls.py file of another app.
+
