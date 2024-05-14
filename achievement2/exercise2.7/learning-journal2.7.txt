@@ -1,0 +1,42 @@
+Question 1:
+Consider your favorite website/application (you can also take CareerFoundry). Think about the various data that your favorite website/application collects. Write down how analyzing the collected data could help the website/application. 
+
+Answer 1:
+I’ll use the CareerFoundry website for this question. CareerFoundry collects information such as personalized user data, course feedback, exercise submissions, forum posts, and time spent on each exercise (reading the material and completing tasks). Collecting all of this data accomplishes several goals:
+Establishes the core functionality of the website as an educational platform.
+Personalizes the platform to each student, ensuring they can access the appropriate courses and exercises, and can see feedback from their tutor and mentor.
+Provides data for the enhancement of the platform and course material. Analyzing student feedback is essential to identifying how course material can be improved.
+
+Question 2:
+Read the Django official documentation on QuerySet API. Note down the different ways in which you can evaluate a QuerySet.
+
+Answer 2:
+Django’s documentation outlines the following methods for evaluating a QuerySet:
+- Iteration
+- Slicing: uses Python’s array-slicing syntax
+- Pickling/caching
+- Calling a repr() method: allows the developer to immediately see the results when using the API interactively
+- Calling a len() method: returns the length of the result list
+- Calling a list() method
+- Calling a bool() method, and, or, or an if statement
+
+In addition, there is a wide array of functions to manipulate QuerySets. A few of these are:
+- filter(): returns a new QuerySet with objects that match the given parameters
+- exclude(): returns a new QuerySet with objects that do not match the given parameters
+- annotate(): adds expressions to each object in a QuerySet
+- order_by(): sorts a QuerySet by a given parameter
+- distinct(): removes duplicate rows from a QuerySet
+- values(): returns a QuerySet with dictionaries rather than model instances
+- values_list(): similar to values(), returns a tuple with the values of specified fields
+
+Question 3:
+In the Exercise, you converted your QuerySet to DataFrame. Now do some research on the advantages and disadvantages of QuerySet and DataFrame, and explain the ways in which DataFrame is better for data processing.
+
+Answer 3:
+Some of the advantages of DataFrame over QuerySet in data processing include:
+- A more comprehensive set of built-in functions and methods for data manipulation and analysis
+- Higher efficiency in performing data manipulation
+- Easy integration with popular Python libraries commonly used for data analysis
+- Serialization to a wider variety of formats than QuerySet, making exporting data more flexible
+- Flexible data manipulation and exploration through the application of custom functions
+

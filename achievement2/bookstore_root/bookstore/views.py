@@ -30,7 +30,7 @@ def login_view(request):
         #if user is authenticated then use pre-defined Django function to login
         login(request, user)
         #& send the user to desired page
-        return redirect('sales:records')
+        return redirect('books:list')
     #in case of error
     else: error_message = 'oops...something went wrong' #print error message
   #prepare data to send from view to template
