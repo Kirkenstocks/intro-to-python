@@ -1,0 +1,42 @@
+Note: I chose to use PythonAnywhere to deploy my Django application because they provide a free tier that suited my needs for this project. I have been unable to get free Heroku access with the student developer pack.
+
+Question 1:
+Explain how you can use CSS and JavaScript in your Django web application.
+
+Answer 1:
+CSS is used to provide styling to the Django application’s webpage, and can be implemented in several ways: inline (within HTML elements), internal (in a block within the HTML page), and external (in a stylesheet). JavaScript is used to provide interactivity to the webpage, improving the user’s experience. It can be written as a script within an HTML file or in its own external file. To use CSS and JS that are defined external to the template file, the developer must load the CSS and JS files from the static folder where they are located (with the line {% load static %} at the top of the template) and implement them in the template where appropriate by linking to the CSS stylesheet in the HTML <head> element, or the JS script file in a <script> tag at the bottom of the template.
+
+Questions 2:
+In your own words, explain the steps you’d need to take to deploy your Django web application. 
+
+Answer 2:
+I deployed my Django app to PythonAnywhere, so I will reference the process I used for that platform. 
+Update the GitHub repository with production-ready code. For PythonAnywhere, this did not require any specific modifications to my codebase, however I did save the SECRET_KEY and DEBUG settings to a .env file for security reasons, and loaded them into the application with python-dotenv.
+Generate a requirements.txt file with the command pip freeze > requirements.txt
+Commit code and push to the GitHub repository.
+Go to pythonanywhere.com and login/register.
+Navigate to the PythonAnywhere bash terminal and create a virtual environment.
+Clone the repository from GitHub, then install dependencies from the requirements.txt file to the new virtual environment.
+Navigate to the WSGI configuration file (under the “Web” tab) and modify it for the Django app. Delete everything that isn’t applicable (i.e. not in the Django section). In the Django section, uncomment the needed portions for configuration and update with information for the app to be deployed. Load the environmental variables here as well.
+Configure static files under the “Web” tab, adding the URL and path for the project’s static file directory and media folder.
+Go back to the bash terminal and run the commands python manage.py migrate to apply model migrations, python manage.py collectstatic to gather static files, and python manage.py createsuperuser to make a new super user account
+Back in the “Web” tab, reload the application and it should be ready for use.
+
+Question 3:
+You’ve now finished Achievement 2 and, with it, the whole course! Take a moment to reflect on your learning:
+Question 3a:
+What went well during this Achievement?
+Answer 3a:
+I developed a solid foundation with Django and found new tools and approaches to help me when I’m feeling stuck while coding.
+Question 3b:
+What’s something you’re proud of? 
+Answer 3b:
+I’m proud to have completed my second full-stack application, with a whole new technology, and for gaining more knowledge and comfort with the specifics of Python and Django, as well as web development in general.
+Question 3c:
+What was the most challenging aspect of this Achievement?
+Answer 3c: 
+I struggled at moments to implement the search functionality and to deploy the application, but persistence paid off.
+Question 3d:
+Did this Achievement meet your expectations? Did it give you the confidence to start working with your new Django skills?
+Answer 3d:
+This achievement met my expectations. I feel fairly comfortable tackling new projects with Django and am excited to see what I can create in the future.

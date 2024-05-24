@@ -1,13 +1,19 @@
 {% load static %}
+<head>
+  <link rel="stylesheet" href="{% static 'styles.css' %}?{% now 'U' %}">
+  <script src="{% static 'sales/home.js' %}" defer></script>
+</head>
 
 <!DOCTYPE html>
 <html lang="en">
   <title>Bookstore Home</title>
   <body>
-    <h1 style="text-align: center">Welcome to our Bookstore</h1>
+    <h1>Welcome to our Bookstore</h1>
     <br>
     <br>
-    <a href="{% url 'login' %}">Login</a>
+    <div style="text-align: right;">
+      <a href="{% url 'login' %}">Login</a>
+    </div>
     <br>
     <br>
     <br>
